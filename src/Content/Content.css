@@ -1,0 +1,62 @@
+.Content{
+    position:absolute;
+    width: 60%;
+    top:70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.itemTsk{
+    position: relative;
+    font-size: 25px;
+    line-height: 15px;
+    color: #5C5959;
+    height: 25px;
+    border-radius: 5px;
+    padding-left: 25px;
+    padding-top: 15px;
+}
+
+.itemTsk:hover
+{
+    background-color: #9288FF;
+    box-shadow: 1px 4px 8px #544CA8;
+    color: #FAC6FF;
+}
+
+.cmplTask
+{
+    text-decoration: line-through;
+}
+
+.ElipseIn
+{
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    margin-right: 4px;
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+    border: 1px solid #5C5959;
+}
+.ElipseIn:hover
+{
+    background-color: #FAC6FF;
+    border: 1px solid #FAC6FF;
+}
+
+@media (max-width: 850px)
+{
+    .Content{
+        width: 80%;
+    }
+}
+
+@media (max-width: 450px)
+{
+    .Content{
+        width: 100%;
+    }
+}
+

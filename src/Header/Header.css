@@ -1,0 +1,68 @@
+.Header{
+    position: fixed;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    background-color: #9288FF;
+    box-shadow: 0px 4px 4px #5D57A1;
+    border-radius: 0 0 30px 60px;
+    height: 70px;
+    color: #fff;
+    z-index: 1;
+}
+
+.Date
+{
+    position: absolute;
+    right: 15%;
+    top: 6px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 27px;
+}
+
+.Line
+{
+    position: absolute;
+    width: 44%;
+    display: block;
+    right: 15%;
+    top:37px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.TasksCount
+{
+    position: absolute;
+    right: 15%;
+    top: 39px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+@media (max-width: 850px)
+{
+    .Header{
+        width: 80%;
+    }
+}
+
+@media (max-width: 450px)
+{
+    .Header{
+        width: 100%;
+    }
+
+    .Date
+    {
+        font-size: 25px;
+    }
+
+    .TasksCount
+    {
+        font-size: 22px;
+    }
+}

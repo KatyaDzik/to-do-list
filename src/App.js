@@ -1,23 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from "./Header/Header";
+import Footer from "./Footer/Footer";
+import Content from "./Content/Content";
+
+
+let tasks_in_progress = [
+    {task:"Build To modern new app"},
+    {task:"Old app"},
+    {task:"Build To modern new app"},
+    {task:"Old app"},
+    {task:"Build To modern new app"},
+    {task:"Old app"}];
+let tasks_completed=[{task:"completed task ;)"},
+    {task:"Build To modern new app"},
+    {task:"Old app"},
+    {task:"Build To modern new app"},
+    {task:"Old app"},
+    {task:"Build To modern new app"},
+    {task:"Old app"},
+    {task:"Build To modern new app"},
+    {task:"Old app"},
+    {task:"Build To modern new app"},
+    {task:"Old app"},
+    {task:"Build To modern new app"},
+    {task:"Old app"}];
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div className='Wrapper'>
+            <Header count_tasks={5}/>
+            <Content task_in_progress={tasks_in_progress} completed_tasks={tasks_completed}/>
+            <Footer/>
+        </div>
     </div>
   );
 }
