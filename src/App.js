@@ -7,24 +7,8 @@ import {useState} from "react";
 
 let tasks_in_progress = [
     {task:"Build To modern new app"},
-    {task:"Old app"},
-    {task:"Build To modern new app"},
-    {task:"Old app"},
-    {task:"Build To modern new app"},
     {task:"Old app"}];
-let tasks_completed=[{task:"completed task ;)"},
-    {task:"Build To modern new app"},
-    {task:"Old app"},
-    {task:"Build To modern new app"},
-    {task:"Old app"},
-    {task:"Build To modern new app"},
-    {task:"Old app"},
-    {task:"Build To modern new app"},
-    {task:"Old app"},
-    {task:"Build To modern new app"},
-    {task:"Old app"},
-    {task:"Build To modern new app"},
-    {task:"Old app"}];
+let tasks_completed=[{task:"completed task ;)"}];
 
 function App() {
 
