@@ -35,14 +35,14 @@ const Content=({progress_tasks, completed_tasks, onChange})=> {
                 {(progress_tasks || []).map((item, index) => (
                     <div className='itemTsk' key={index}>
                         <span className='ElipseIn' onClick={(e) => doneTask(index, e)}/>
-                        <span className='taskTitle'>{item.task}</span>
+                        <span className='taskTitle' onClick={(e) => doneTask(index, e)}>{item.task}</span>
                     </div>
                 ))}
 
                 {(completed_tasks || []).map((item, index) => (
                     <div className='itemTsk cmplTask' key={index}>
                         <span className='ElipseIn' onClick={(e) => undoneTask(index, e)}>✓</span>
-                        <span className='taskTitle'>{item.task}</span>
+                        <span className='taskTitle' onClick={(e) => undoneTask(index, e)}>{item.task}</span>
                     </div>
                 ))}
             </div>
